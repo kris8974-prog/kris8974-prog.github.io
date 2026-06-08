@@ -96,8 +96,11 @@
       background: #3f5f3b;
       color: white;
       text-decoration: none;
+      border: none;
       border-radius: 3px;
       font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
       transition: 0.2s;
     }
 
@@ -245,73 +248,82 @@
       text-align: center;
       padding: 30px;
     }
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(20, 35, 20, 0.75);
-  padding: 20px;
-}
 
-.modal-content {
-  background: white;
-  max-width: 520px;
-  margin: 80px auto;
-  padding: 32px;
-  border-radius: 6px;
-  position: relative;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-}
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(20, 35, 20, 0.75);
+      padding: 20px;
+      overflow-y: auto;
+    }
 
-.close {
-  position: absolute;
-  right: 18px;
-  top: 12px;
-  font-size: 30px;
-  cursor: pointer;
-  color: #263524;
-}
+    .modal-content {
+      background: white;
+      max-width: 520px;
+      margin: 80px auto;
+      padding: 32px;
+      border-radius: 6px;
+      position: relative;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
 
-.modal-content h2 {
-  margin-top: 0;
-  color: #263524;
-}
+    .close {
+      position: absolute;
+      right: 18px;
+      top: 12px;
+      font-size: 30px;
+      cursor: pointer;
+      color: #263524;
+    }
 
-.form-group {
-  margin-bottom: 16px;
-}
+    .modal-content h2 {
+      margin-top: 0;
+      color: #263524;
+    }
 
-.form-group label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
-  color: #263524;
-}
+    .form-group {
+      margin-bottom: 16px;
+    }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccd6c4;
-  border-radius: 4px;
-  font-size: 15px;
-  font-family: Arial, sans-serif;
-}
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #263524;
+    }
 
-.form-group textarea {
-  min-height: 130px;
-  resize: vertical;
-}
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccd6c4;
+      border-radius: 4px;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+    }
 
-.form-note {
-  font-size: 13px;
-  color: #666;
-  line-height: 1.5;
-}
+    .form-group textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    #formMessage {
+      margin-top: 16px;
+      font-weight: bold;
+      color: #3f5f3b;
+    }
+
     @media (max-width: 800px) {
       .hero h1 {
         font-size: 40px;
@@ -337,6 +349,10 @@
         display: inline-block;
         padding: 4px 0;
       }
+
+      .modal-content {
+        margin: 40px auto;
+      }
     }
   </style>
 </head>
@@ -359,7 +375,7 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Medžio gaminiai jūsų namams</h1>
-<p>Nuo 1993 metų kuriame jaukius, ilgaamžius ir estetiškus sprendimus interjerui iš natūralaus medžio.</p>
+      <p>Nuo 1993 metų kuriame jaukius, ilgaamžius ir estetiškus sprendimus interjerui iš natūralaus medžio.</p>
       <button class="button" onclick="openModal()">Gauti pasiūlymą</button>
     </div>
   </section>
@@ -403,11 +419,11 @@
       <div>
         <h2 class="section-title">Apie Vomeda</h2>
         <p class="section-text">
-  Vomeda su medžiu dirba nuo 1993 metų. Per ilgus darbo metus sukaupėme ilgametę
-  patirtį, kuri leidžia kurti patikimus, kokybiškus ir estetiškus sprendimus namams
-  bei individualiems projektams. Mūsų tikslas — aiškus procesas, patikimas rezultatas
-  ir estetiškas galutinis vaizdas.
-</p>
+          Vomeda su medžiu dirba nuo 1993 metų. Per ilgus darbo metus sukaupėme ilgametę
+          patirtį, kuri leidžia kurti patikimus, kokybiškus ir estetiškus sprendimus namams
+          bei individualiems projektams. Mūsų tikslas — aiškus procesas, patikimas rezultatas
+          ir estetiškas galutinis vaizdas.
+        </p>
         <a class="button" href="#kontaktai">Susisiekti</a>
       </div>
 
@@ -473,58 +489,91 @@
   <footer>
     <p>© 2026 Vomeda. Visos teisės saugomos.</p>
   </footer>
+
   <div id="offerModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
 
-    <h2>Gauti pasiūlymą</h2>
-    <p>Užpildykite formą ir susisieksime dėl individualaus pasiūlymo.</p>
+      <h2>Gauti pasiūlymą</h2>
+      <p>Užpildykite formą ir susisieksime dėl individualaus pasiūlymo.</p>
 
-    <form action="https://formspree.io/f/xlgkbprz" method="POST">
-      <div class="form-group">
-        <label for="vardas">Vardas, pavardė</label>
-        <input type="text" id="vardas" name="Vardas ir pavardė" required>
-      </div>
+      <form id="offerForm" action="https://formspree.io/f/xlgkbprz" method="POST">
+        <div class="form-group">
+          <label for="vardas">Vardas, pavardė</label>
+          <input type="text" id="vardas" name="Vardas ir pavardė" required>
+        </div>
 
-      <div class="form-group">
-        <label for="pastas">El. paštas</label>
-        <input type="email" id="pastas" name="El. paštas" required>
-      </div>
+        <div class="form-group">
+          <label for="pastas">El. paštas</label>
+          <input type="email" id="pastas" name="El. paštas" required>
+        </div>
 
-      <div class="form-group">
-        <label for="telefonas">Telefonas</label>
-        <input type="tel" id="telefonas" name="Telefonas">
-      </div>
+        <div class="form-group">
+          <label for="telefonas">Telefonas</label>
+          <input type="tel" id="telefonas" name="Telefonas">
+        </div>
 
-      <div class="form-group">
-        <label for="zinute">Žinutė</label>
-        <textarea id="zinute" name="Žinutė" required placeholder="Trumpai aprašykite, kokio gaminio ar paslaugos reikia."></textarea>
-      </div>
+        <div class="form-group">
+          <label for="zinute">Žinutė</label>
+          <textarea id="zinute" name="Žinutė" required placeholder="Trumpai aprašykite, kokio gaminio ar paslaugos reikia."></textarea>
+        </div>
 
-      <button class="button" type="submit">Siųsti užklausą</button>
+        <button class="button" type="submit">Siųsti užklausą</button>
 
-      <p class="form-note">
-        Paspaudus „Siųsti“, jūsų užklausa bus išsiųsta mums el. paštu.
-      </p>
-    </form>
+        <p id="formMessage" class="form-note"></p>
+
+        <p class="form-note">
+          Paspaudus „Siųsti“, jūsų užklausa bus išsiųsta mums el. paštu.
+        </p>
+      </form>
+    </div>
   </div>
-</div>
 
-<script>
-  function openModal() {
-    document.getElementById("offerModal").style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById("offerModal").style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    const modal = document.getElementById("offerModal");
-    if (event.target === modal) {
-      closeModal();
+  <script>
+    function openModal() {
+      document.getElementById("offerModal").style.display = "block";
     }
-  }
-</script>
+
+    function closeModal() {
+      document.getElementById("offerModal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("offerModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+
+    const form = document.getElementById("offerForm");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      formMessage.textContent = "Siunčiama...";
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+          formMessage.textContent = "Ačiū! Jūsų užklausa išsiųsta.";
+          form.reset();
+        } else {
+          formMessage.textContent = "Nepavyko išsiųsti. Patikrinkite laukus arba bandykite dar kartą.";
+        }
+      } catch (error) {
+        formMessage.textContent = "Įvyko klaida. Bandykite dar kartą vėliau.";
+      }
+    });
+  </script>
 </body>
 </html>
