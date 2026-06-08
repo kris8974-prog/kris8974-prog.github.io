@@ -10,19 +10,23 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       color: #1f1f1f;
-      background: #f6f2ec;
+      background: #f3f5ef;
     }
 
     header {
       position: sticky;
       top: 0;
       z-index: 10;
-      background: rgba(255, 255, 255, 0.95);
-      border-bottom: 1px solid #ddd;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid #d7ddcf;
     }
 
     .nav {
@@ -37,17 +41,20 @@
     .logo {
       font-size: 26px;
       font-weight: bold;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+      color: #263524;
     }
 
     .nav a {
       margin-left: 24px;
-      color: #1f1f1f;
+      color: #263524;
       text-decoration: none;
       font-size: 15px;
+      font-weight: 500;
     }
 
     .nav a:hover {
+      color: #5f7f52;
       text-decoration: underline;
     }
 
@@ -56,7 +63,7 @@
       display: flex;
       align-items: center;
       background:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        linear-gradient(rgba(20, 35, 20, 0.62), rgba(20, 35, 20, 0.62)),
         url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80");
       background-size: cover;
       background-position: center;
@@ -71,14 +78,14 @@
 
     .hero h1 {
       font-size: 58px;
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 0 20px;
       line-height: 1.05;
     }
 
     .hero p {
       font-size: 20px;
-      max-width: 580px;
+      max-width: 620px;
       line-height: 1.6;
     }
 
@@ -86,11 +93,16 @@
       display: inline-block;
       margin-top: 24px;
       padding: 14px 24px;
-      background: #8a5a32;
+      background: #3f5f3b;
       color: white;
       text-decoration: none;
-      border-radius: 2px;
+      border-radius: 3px;
       font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #2f472c;
     }
 
     section {
@@ -102,10 +114,11 @@
     .section-title {
       font-size: 38px;
       margin-bottom: 12px;
+      color: #263524;
     }
 
     .section-text {
-      max-width: 650px;
+      max-width: 680px;
       line-height: 1.7;
       color: #555;
       margin-bottom: 36px;
@@ -120,8 +133,9 @@
     .card {
       background: white;
       overflow: hidden;
-      border-radius: 4px;
+      border-radius: 5px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid #e2e7dc;
     }
 
     .card img {
@@ -138,6 +152,7 @@
     .card h3 {
       margin-top: 0;
       font-size: 24px;
+      color: #263524;
     }
 
     .card p {
@@ -154,11 +169,12 @@
 
     .about img {
       width: 100%;
-      border-radius: 4px;
+      border-radius: 5px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
     .works {
-      background: #1f1f1f;
+      background: #263524;
       color: white;
       max-width: none;
     }
@@ -167,6 +183,10 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 80px 24px;
+    }
+
+    .works .section-title {
+      color: white;
     }
 
     .gallery {
@@ -180,18 +200,47 @@
       width: 100%;
       height: 240px;
       object-fit: cover;
-      border-radius: 4px;
+      border-radius: 5px;
+    }
+
+    .price-box {
+      background: white;
+      border-radius: 5px;
+      padding: 36px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border-left: 6px solid #3f5f3b;
+    }
+
+    .price-box h3 {
+      margin-top: 0;
+      color: #263524;
+      font-size: 26px;
+    }
+
+    .price-box p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 16px;
+      background: #eef3e7;
+      border-left: 4px solid #6f8f61;
+      color: #344732;
+      line-height: 1.6;
     }
 
     .contact {
       background: white;
-      border-radius: 4px;
+      border-radius: 5px;
       padding: 36px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid #e2e7dc;
     }
 
     footer {
-      background: #111;
+      background: #1b261a;
       color: white;
       text-align: center;
       padding: 30px;
@@ -200,6 +249,10 @@
     @media (max-width: 800px) {
       .hero h1 {
         font-size: 40px;
+      }
+
+      .hero p {
+        font-size: 18px;
       }
 
       .cards,
@@ -215,6 +268,8 @@
 
       .nav a {
         margin: 0 8px;
+        display: inline-block;
+        padding: 4px 0;
       }
     }
   </style>
@@ -224,10 +279,12 @@
   <header>
     <div class="nav">
       <div class="logo">Vomeda</div>
+
       <nav>
         <a href="#produktai">Produktai</a>
         <a href="#apie">Apie mus</a>
         <a href="#darbai">Darbai</a>
+        <a href="#kainorastis">Kainoraštis</a>
         <a href="#kontaktai">Kontaktai</a>
       </nav>
     </div>
@@ -245,7 +302,7 @@
     <h2 class="section-title">Gaminiai ir paslaugos</h2>
     <p class="section-text">
       Siūlome medžio gaminius namams, interjerui ir individualiems projektams.
-      Šią vietą vėliau pritaikysime tiksliai pagal tavo verslą.
+      Šią vietą vėliau galima pritaikyti tiksliai pagal jūsų gaminius ir paslaugas.
     </p>
 
     <div class="cards">
@@ -253,7 +310,7 @@
         <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Medinės grindys">
         <div class="card-content">
           <h3>Medinės grindys</h3>
-          <p>Natūralios, šiltos ir ilgaamžės grindys moderniems namams.</p>
+          <p>Natūralios, šiltos ir ilgaamžės grindys moderniems bei klasikiniams namams.</p>
         </div>
       </div>
 
@@ -261,7 +318,7 @@
         <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Medinės durys">
         <div class="card-content">
           <h3>Vidaus durys</h3>
-          <p>Estetiškos durys, derančios prie šiuolaikinio ir klasikinio interjero.</p>
+          <p>Estetiškos durys, derančios prie šiuolaikinio ir tradicinio interjero.</p>
         </div>
       </div>
 
@@ -269,7 +326,7 @@
         <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80" alt="Mediniai laiptai">
         <div class="card-content">
           <h3>Laiptai</h3>
-          <p>Tvirti mediniai laiptai pagal individualius namų sprendimus.</p>
+          <p>Tvirti ir kokybiški mediniai laiptai pagal individualius namų sprendimus.</p>
         </div>
       </div>
     </div>
@@ -295,7 +352,8 @@
     <div class="works-inner">
       <h2 class="section-title">Atlikti darbai</h2>
       <p class="section-text" style="color: #ddd;">
-        Čia galėsi įkelti realias savo darbų nuotraukas. Tai labai svarbu, nes tokio tipo verslo svetainėje vaizdai parduoda labiau nei tekstas.
+        Čia galėsite įkelti realias savo darbų nuotraukas. Tokiai svetainei realūs vaizdai yra labai svarbūs,
+        nes jie sukuria pasitikėjimą ir parodo darbų kokybę.
       </p>
 
       <div class="gallery">
@@ -307,13 +365,40 @@
     </div>
   </section>
 
+  <section id="kainorastis">
+    <h2 class="section-title">Preliminarus kainoraštis</h2>
+    <p class="section-text">
+      Atsisiųskite preliminarų kainoraštį PDF formatu. Galutinė kaina priklauso nuo matmenų,
+      medžiagų, apdailos, montavimo ir individualių projekto reikalavimų.
+    </p>
+
+    <div class="price-box">
+      <h3>PDF kainoraštis</h3>
+      <p>
+        Čia galite peržiūrėti arba atsisiųsti mūsų gaminių ir paslaugų kainoraštį.
+        Dėl tikslaus pasiūlymo rekomenduojame susisiekti individualiai.
+      </p>
+
+      <a class="button" href="kainorastis.pdf" target="_blank">
+        Atsisiųsti kainoraštį
+      </a>
+
+      <div class="note">
+        <strong>Pastaba:</strong> kainoraštis yra preliminarus. Individualių užsakymų kaina gali skirtis
+        priklausomai nuo projekto sudėtingumo ir pasirinktų medžiagų.
+      </div>
+    </div>
+  </section>
+
   <section id="kontaktai">
     <h2 class="section-title">Kontaktai</h2>
+
     <div class="contact">
       <p><strong>Telefonas:</strong> +370 600 00000</p>
       <p><strong>El. paštas:</strong> info@vomeda.lt</p>
       <p><strong>Miestas:</strong> Lietuva</p>
       <p>Parašykite mums dėl individualaus pasiūlymo.</p>
+
       <a class="button" href="mailto:info@vomeda.lt">Rašyti el. paštu</a>
     </div>
   </section>
