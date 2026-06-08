@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vomeda – mediniai gaminiai nuo 1993 m.</title>
+  <title>Vomeda – Mediniai gaminiai nuo 1993</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -102,7 +102,7 @@
       position: absolute;
       inset: 0;
       background:
-        url("https://myindianthings.com/cdn/shop/files/Tree_Textured_Square_Box_Wooden_Wallpaper_1a9464ce-c92c-44bb-a9c3-db0fadd62593_800x.jpg?v=1711135859") center/cover;
+        url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1800&q=80") center/cover;
     }
 
     .hero-bg::after {
@@ -495,42 +495,12 @@
       color: var(--gold);
     }
 
-    .portfolio-help {
-      max-width: 1260px;
-      margin: 0 auto 28px;
-      padding: 0 32px;
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 20px;
-      align-items: start;
-      color: rgba(255,255,255,0.65);
-      font-size: 14px;
-      line-height: 1.7;
-      font-weight: 300;
-    }
-
-    .portfolio-help strong {
-      color: var(--gold);
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    .portfolio-help code {
-      padding: 2px 6px;
-      background: rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.85);
-      border-radius: 2px;
-      font-family: monospace;
-      font-size: 13px;
-    }
-
     .portfolio-grid {
       max-width: 1260px;
       margin: 0 auto;
       padding: 0 32px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(12, 1fr);
       gap: 16px;
     }
 
@@ -538,18 +508,19 @@
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      aspect-ratio: 4/3;
-      background: rgba(255,255,255,0.04);
     }
 
-    .pitem.featured {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
+    .pitem:nth-child(1) { grid-column: span 7; grid-row: span 2; }
+    .pitem:nth-child(2) { grid-column: span 5; }
+    .pitem:nth-child(3) { grid-column: span 5; }
+    .pitem:nth-child(4) { grid-column: span 4; }
+    .pitem:nth-child(5) { grid-column: span 4; }
+    .pitem:nth-child(6) { grid-column: span 4; }
 
     .pitem img {
       width: 100%;
       height: 100%;
+      min-height: 280px;
       object-fit: cover;
       display: block;
       transition: transform 0.6s ease;
@@ -885,13 +856,7 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      .portfolio-help {
-        grid-template-columns: 1fr;
-        gap: 8px;
-      }
-
-      .pitem,
-      .pitem.featured { grid-column: span 1 !important; grid-row: span 1 !important; }
+      .pitem { grid-column: span 1 !important; grid-row: span 1 !important; }
 
       .hero-stats { display: none; }
 
@@ -904,12 +869,6 @@
       .trust-strip { gap: 24px; }
 
       .footer-inner { flex-direction: column; text-align: center; }
-    }
-
-    @media (max-width: 600px) {
-      .portfolio-grid {
-        grid-template-columns: 1fr;
-      }
     }
 
     /* SCROLL REVEAL */
@@ -945,8 +904,8 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Lietuviška kokybė nuo 1993 m.</p>
-      <h1>Mediniai gaminiai, sukurti <em>tarnauti ilgai</em></h1>
-      <p class="hero-sub">Durys, baldai ir individualūs mediniai sprendimai iš klijuotos medienos masyvo. Gaminame Vilniuje, tiekiame visoje Europoje.</p>
+      <h1>Mediniai gaminiai, sukurti <em>ilgam gyvenimui</em></h1>
+      <p class="hero-sub">Durys, baldai ir individualūs mediniai sprendimai iš klijuoto medienos masyvo. Gamyba Vilniuje, tiekiame visoje Europoje.</p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="openModal()">Gauti pasiūlymą</button>
         <a href="#darbai" class="btn-ghost">Peržiūrėti darbus</a>
@@ -959,8 +918,8 @@
         <div class="stat-label">Metų patirtis</div>
       </div>
       <div class="stat">
-        <div class="stat-num">500+</div>
-        <div class="stat-label">Įgyvendintų projektų</div>
+        <div class="stat-num">700+</div>
+        <div class="stat-label">Įvykdyti projektai</div>
       </div>
     </div>
   </section>
@@ -968,7 +927,7 @@
   <!-- TRUST STRIP -->
   <div class="trust-strip">
     <span class="trust-item">Gamyba <strong>Vilniuje</strong></span>
-    <span class="trust-item">Klijuotos medienos masyvas</span>
+    <span class="trust-item">Klijuotas medienos masyvas</span>
     <span class="trust-item">Tiekiame <strong>į Skandinaviją ir Vokietiją</strong></span>
     <span class="trust-item">Individualūs užsakymai</span>
     <span class="trust-item">Įkurta <strong>1993 m.</strong></span>
@@ -979,8 +938,8 @@
     <div class="section-wrap">
       <div class="reveal">
         <p class="label">Gaminiai ir paslaugos</p>
-        <h2 class="display-title">Mes kuriame iš medžio —<br>tai, kas tarnauja ilgai</h2>
-        <p class="body-text">Kiekvienas gaminys — nuo vidaus durų iki individualių baldų — kuriamas iš kokybiškos klijuotos medienos masyvo ir rankomis apdirbamas Vilniuje.</p>
+        <h2 class="display-title">Mes kuriame iš medžio —<br>tai, kas gyvuoja ilgai</h2>
+        <p class="body-text">Kiekvienas gaminys — nuo vidaus durų iki individualių baldų — gaminamas iš kokybiškos medienos, įskaitant klijuotos medienos masyvą, ir kruopščiai apdirbamas rankomis.</p>
       </div>
 
       <div class="products-grid reveal" style="transition-delay: 0.2s">
@@ -989,7 +948,7 @@
           <div class="product-overlay">
             <div class="product-num">01</div>
             <div class="product-name">Vidaus durys</div>
-            <div class="product-desc">Masyvo durys pagal standartinius ir individualius matmenis. Dažymas, alyvavimas, įvairūs apvadai.</div>
+            <div class="product-desc">Vidaus durys iš medžio masyvo pagal standartinius arba individualius matmenis. Galimas dažymas, alyvavimas ir skirtingų apvadų pasirinkimas.</div>
           </div>
         </div>
         <div class="product-card">
@@ -997,7 +956,7 @@
           <div class="product-overlay">
             <div class="product-num">02</div>
             <div class="product-name">Baldai</div>
-            <div class="product-desc">Miegamojo, svetainės ir virtuvės baldai iš klijuotos medienos masyvo. Ilgaamžis grožis kasdieniam naudojimui.</div>
+            <div class="product-desc">Miegamojo, svetainės ir virtuvės baldai iš klijuoto masyvo. Ilgaamžis grožis kasdieniam gyvenimui.</div>
           </div>
         </div>
         <div class="product-card">
@@ -1005,7 +964,7 @@
           <div class="product-overlay">
             <div class="product-num">03</div>
             <div class="product-name">Individualūs projektai</div>
-            <div class="product-desc">Nuo architektūrinių elementų iki unikalių interjero sprendimų. Įgyvendiname nestandartinius klientų sumanymus.</div>
+            <div class="product-desc">Nuo architektūrinių elementų iki unikalių interjero sprendimų. Realizuojame nestandartinius klientų sumanymus.</div>
           </div>
         </div>
       </div>
@@ -1027,8 +986,8 @@
         <div class="reveal" style="transition-delay: 0.2s">
           <p class="label">Apie Vomeda</p>
           <h2 class="display-title">Medis mūsų rankose nuo 1993-ųjų</h2>
-          <p class="body-text">Vomeda – Vilniaus medinių gaminių gamykla, veikianti nuo 1993 m. Per tris dešimtmečius esame sukūrę šimtus unikalių interjerų – nuo privačių rezidencijų Lietuvoje iki projektų Skandinavijoje ir Vokietijoje.</p>
-          <p class="body-text" style="margin-top: 16px;">Mūsų stiprybė – klijuotos medienos masyvas: tvirtas, stabilus ir ilgaamžis. Kiekvienas gaminys kuriamas atsižvelgiant į kliento poreikius ir erdvės estetiką.</p>
+          <p class="body-text">Vomeda – tai Vilniaus medinių gaminių gamykla, dirbanti nuo 1993 m. Per tris dešimtmečius sukūrėme šimtus unikalių interjerų – nuo privačių rezidencijų Lietuvoje iki projektų Skandinavijoje ir Vokietijoje.</p>
+          <p class="body-text" style="margin-top: 16px;">Mūsų stiprybė – klijuotas medienos masyvas: stiprus, stabilus, ilgaamžis. Kiekvienas gaminys kuriamas atsižvelgiant į kliento poreikius ir erdvės estetiką.</p>
 
           <div class="about-features">
             <div class="about-feature">
@@ -1042,14 +1001,14 @@
               <div class="feature-dot"></div>
               <div class="feature-text">
                 <strong>Klijuotas masyvas</strong>
-                <span>Medžiaga, kuri yra stabilesnė, mažiau linkusi skilti ar deformuotis ir tarnauja dešimtmečius.</span>
+                <span>Medžiaga, kuri neperskilsta, nedeformuojasi ir tarnauja dešimtmečius.</span>
               </div>
             </div>
             <div class="about-feature">
               <div class="feature-dot"></div>
               <div class="feature-text">
                 <strong>Eksportas į Europą</strong>
-                <span>Tiekiame gaminius klientams ir projektams Skandinavijoje bei Vokietijoje.</span>
+                <span>Tiekiame gaminius Skandinavijos ir Vokietijos klientams ir projektams.</span>
               </div>
             </div>
           </div>
@@ -1068,7 +1027,7 @@
         <h2 class="display-title" style="color: white;">Projektų galerija</h2>
       </div>
       <div>
-        <p class="body-text" style="color: rgba(255,255,255,0.45); max-width: 420px; margin-bottom: 24px;">Čia galite patogiai kelti ir rodyti atliktų projektų nuotraukas: grindis, sienas, lubas, laiptus, terasas, duris, baldus ir kitus medžio darbus.</p>
+        <p class="body-text" style="color: rgba(255,255,255,0.45); max-width: 420px; margin-bottom: 24px;">Čia galite rodyti atliktų projektų nuotraukas: grindis, sienas, lubas, laiptus, terasas, duris, baldus ir kitus medžio darbus.</p>
         <div class="filter-bar" id="portfolioFilters">
           <button class="filter-btn active" onclick="filterPortfolio('visi', this)">Visi</button>
           <button class="filter-btn" onclick="filterPortfolio('grindys', this)">Grindys</button>
@@ -1079,6 +1038,58 @@
         </div>
       </div>
     </div>
+
+    <div class="portfolio-grid reveal" style="transition-delay: 0.2s">
+      <div class="pitem featured" data-cat="grindys">
+        <img src="images/projects/grindys-vilnius-01.jpg" alt="Ąžuolo grindys privačiame name" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80';">
+        <div class="pitem-overlay">
+          <div class="pitem-cat">Grindys · Vilnius</div>
+          <div class="pitem-title">Ąžuolo grindys privačiame name</div>
+        </div>
+      </div>
+
+      <div class="pitem" data-cat="sienos">
+        <img src="images/projects/sienos-kaunas-01.jpg" alt="Medinė sienų apdaila svetainėje" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?auto=format&fit=crop&w=900&q=80';">
+        <div class="pitem-overlay">
+          <div class="pitem-cat">Sienos ir lubos · Kaunas</div>
+          <div class="pitem-title">Medinė sienų apdaila svetainėje</div>
+        </div>
+      </div>
+
+      <div class="pitem" data-cat="laiptai">
+        <img src="images/projects/laiptai-vilnius-01.jpg" alt="Individualūs mediniai laiptai" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=900&q=80';">
+        <div class="pitem-overlay">
+          <div class="pitem-cat">Laiptai · Vilnius</div>
+          <div class="pitem-title">Individualūs mediniai laiptai</div>
+        </div>
+      </div>
+
+      <div class="pitem" data-cat="terasos">
+        <img src="images/projects/terasa-trakai-01.jpg" alt="Terasos lentos ir lauko apdaila" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80';">
+        <div class="pitem-overlay">
+          <div class="pitem-cat">Terasos · Trakai</div>
+          <div class="pitem-title">Terasos lentos ir lauko apdaila</div>
+        </div>
+      </div>
+
+      <div class="pitem" data-cat="sienos">
+        <img src="images/projects/lubos-klaipeda-01.jpg" alt="Medinės lubos jaukiam interjerui" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80';">
+        <div class="pitem-overlay">
+          <div class="pitem-cat">Sienos ir lubos · Klaipėda</div>
+          <div class="pitem-title">Medinės lubos jaukiam interjerui</div>
+        </div>
+      </div>
+
+      <div class="pitem" data-cat="kita">
+        <img src="images/projects/individualus-hamburgas-01.jpg" alt="Nestandartinis medžio sprendimas" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=900&q=80';">
+        <div class="pitem-overlay">
+          <div class="pitem-cat">Kita · Hamburgas</div>
+          <div class="pitem-title">Nestandartinis medžio sprendimas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PRICING -->
   <section id="kainorastis">
     <div class="section-wrap">
@@ -1092,7 +1103,7 @@
         <div class="pricing-box">
           <div class="pricing-box-label">Atsisiųsti</div>
           <h3>PDF kainoraštis</h3>
-          <p>Mūsų standartinių gaminių ir paslaugų preliminarūs kainų intervalai. Atsisiųskite kainoraštį kaip pirmą žingsnį prieš susitikimą.</p>
+          <p>Mūsų standartinių gaminių ir paslaugų preliminarūs kainos intervalai. Atsiųskite kaip pirmą žingsnį prieš susitikimą.</p>
           <a class="btn-primary" href="kainorastis.pdf" target="_blank">Atsisiųsti kainoraštį</a>
           <div class="pricing-note">
             <strong>Pastaba:</strong> Kainoraštis yra orientacinis. Individualių projektų kaina aptariama asmeniškai.
@@ -1102,19 +1113,19 @@
         <div class="pricing-features">
           <div class="pricing-feature">
             <div class="pricing-feature-title">Vidaus durys</div>
-            <div class="pricing-feature-text">Standartiniai matmenys ir pasirinkta apdaila. Galima dažyti arba alyvuoti.</div>
+            <div class="pricing-feature-text">Standartiniai matmenys, pasirinktos apdailos. Galima dažyti arba alyvuoti.</div>
           </div>
           <div class="pricing-feature">
             <div class="pricing-feature-title">Baldai pagal užsakymą</div>
-            <div class="pricing-feature-text">Miegamojo, svetainės ir biuro baldai. Kaina priklauso nuo medžiagų, darbo apimties ir apdailos.</div>
+            <div class="pricing-feature-text">Miegamojo, svetainės ir biuro baldai. Atskirai kainuoja medžiaga, darbas ir apdaila.</div>
           </div>
           <div class="pricing-feature">
             <div class="pricing-feature-title">Individualūs projektai</div>
-            <div class="pricing-feature-text">Architektūriniai elementai, laiptai, atitvarai ir kt. Kaina skaičiuojama individualiai, pagal brėžinius.</div>
+            <div class="pricing-feature-text">Architektūriniai elementai, laiptai, atitvarai ir kt. Kaina skaičiuojama individualiai pagal brėžinius.</div>
           </div>
           <div class="pricing-feature">
             <div class="pricing-feature-title">Montavimas ir logistika</div>
-            <div class="pricing-feature-text">Pristatymas Lietuvoje ir į kitas Europos šalis. Montavimas galimas padedant mūsų partneriams.</div>
+            <div class="pricing-feature-text">Pristatymas Lietuvoje ir į Europą. Montavimas galimas per mūsų partnerius.</div>
           </div>
         </div>
       </div>
@@ -1167,7 +1178,7 @@
           <div style="margin-top: 36px; padding: 24px; background: var(--forest); color: white;">
             <p class="label" style="color: var(--gold);">Darbo laikas</p>
             <p style="font-size: 14px; color: rgba(255,255,255,0.7); font-weight: 300; line-height: 1.8; margin-top: 8px;">
-              Pirmadienis–penktadienis<br>
+              Pirmadienis – Penktadienis<br>
               8:00 – 17:00
             </p>
           </div>
@@ -1188,7 +1199,7 @@
               <input type="tel" id="telefonas" name="Telefonas">
             </div>
             <div class="form-group">
-              <label for="gaminys">Dominantis gaminys</label>
+              <label for="gaminys">Domina gaminys</label>
               <select id="gaminys" name="Gaminys">
                 <option value="">Pasirinkite...</option>
                 <option>Vidaus durys</option>
@@ -1223,7 +1234,7 @@
       <button class="modal-close" onclick="closeModal()">×</button>
       <p class="modal-label">Pasiūlymas</p>
       <h2>Gauti pasiūlymą</h2>
-      <p class="modal-sub">Užpildykite formą – susisieksime per 1–2 darbo dienas ir pateiksime tikslų pasiūlymą.</p>
+      <p class="modal-sub">Užpildykite formą ir susisieksime per 1–2 darbo dienas su tiksliu pasiūlymu.</p>
 
       <form id="modalForm" action="https://formspree.io/f/xlgkbprz" method="POST">
         <div class="form-group">
@@ -1239,7 +1250,7 @@
           <input type="tel" name="Telefonas">
         </div>
         <div class="form-group">
-          <label>Dominantis gaminys</label>
+          <label>Domina gaminys</label>
           <select name="Gaminys">
             <option value="">Pasirinkite...</option>
             <option>Vidaus durys</option>
@@ -1313,93 +1324,16 @@
       e.preventDefault(); handleFormSubmit(e.target, 'modalMessage');
     });
 
-    // Projektų galerija
-    // Norėdami pridėti naują darbą:
-    // 1) įkelkite nuotrauką į aplanką images/projects/
-    // 2) nukopijuokite vieną įrašą žemiau
-    // 3) pakeiskite title, category, city ir image reikšmes
-    const projects = [
-      {
-        title: 'Ąžuolo grindys privačiame name',
-        category: 'grindys',
-        city: 'Vilnius',
-        image: 'images/projects/grindys-vilnius-01.jpg',
-        fallback: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=80',
-        featured: true
-      },
-      {
-        title: 'Medinė sienų apdaila svetainėje',
-        category: 'sienos',
-        city: 'Kaunas',
-        image: 'images/projects/sienos-kaunas-01.jpg',
-        fallback: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?auto=format&fit=crop&w=900&q=80'
-      },
-      {
-        title: 'Individualūs mediniai laiptai',
-        category: 'laiptai',
-        city: 'Vilnius',
-        image: 'images/projects/laiptai-vilnius-01.jpg',
-        fallback: 'https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=900&q=80'
-      },
-      {
-        title: 'Terasos lentos ir lauko apdaila',
-        category: 'terasos',
-        city: 'Trakai',
-        image: 'images/projects/terasa-trakai-01.jpg',
-        fallback: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80'
-      },
-      {
-        title: 'Medinės lubos jaukiam interjerui',
-        category: 'sienos',
-        city: 'Klaipėda',
-        image: 'images/projects/lubos-klaipeda-01.jpg',
-        fallback: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80'
-      },
-      {
-        title: 'Nestandartinis medžio sprendimas',
-        category: 'kita',
-        city: 'Hamburgas',
-        image: 'images/projects/individualus-hamburgas-01.jpg',
-        fallback: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=900&q=80'
-      }
-    ];
-
-    function categoryLabel(category) {
-      const labels = {
-        grindys: 'Grindys',
-        sienos: 'Sienos ir lubos',
-        laiptai: 'Laiptai',
-        terasos: 'Terasos',
-        kita: 'Kita'
-      };
-      return labels[category] || 'Projektas';
-    }
-
-    function renderPortfolio(items = projects) {
-      const grid = document.getElementById('portfolioGrid');
-      grid.innerHTML = items.map(project => `
-        <div class="pitem ${project.featured ? 'featured' : ''}" data-cat="${project.category}">
-          <img src="${project.image}" alt="${project.title}" onerror="this.onerror=null; this.src='${project.fallback}';">
-          <div class="pitem-overlay">
-            <div class="pitem-cat">${categoryLabel(project.category)} · ${project.city}</div>
-            <div class="pitem-title">${project.title}</div>
-          </div>
-        </div>
-      `).join('');
-    }
-
+    // Portfolio filter
     function filterPortfolio(cat, btn) {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-
-      const filtered = cat === 'visi'
-        ? projects
-        : projects.filter(project => project.category === cat);
-
-      renderPortfolio(filtered);
+      document.querySelectorAll('.pitem').forEach(item => {
+        const show = cat === 'visi' || item.dataset.cat === cat;
+        item.style.opacity = show ? '1' : '0.2';
+        item.style.pointerEvents = show ? 'auto' : 'none';
+      });
     }
-
-    renderPortfolio();
   </script>
 </body>
 </html>
