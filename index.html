@@ -1196,117 +1196,117 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO / DARBAI -->
-  <section id="darbai">
-    <div class="works-header reveal">
-      <div>
-        <p class="label" style="color: var(--gold);" data-lt="Atlikti darbai" data-en="Completed work">Atlikti darbai</p>
-        <h2 class="display-title" style="color: white;" data-lt="Projektų galerija" data-en="Project gallery">Projektų galerija</h2>
+ <!-- PORTFOLIO / DARBAI -->
+<section id="darbai">
+  <div class="works-header reveal">
+    <div>
+      <p class="label" style="color: var(--gold);" data-lt="Atlikti darbai" data-en="Completed work">Atlikti darbai</p>
+      <h2 class="display-title" style="color: white;" data-lt="Projektų galerija" data-en="Project gallery">Projektų galerija</h2>
+    </div>
+    <div>
+      <div class="filter-bar" id="portfolioFilters">
+        <button class="filter-btn active" onclick="filterPortfolio('visi', this)" data-lt="Visi" data-en="All">Visi</button>
+        <button class="filter-btn" onclick="filterPortfolio('durys', this)" data-lt="Durys" data-en="Doors">Durys</button>
+        <button class="filter-btn" onclick="filterPortfolio('grindys', this)" data-lt="Grindys" data-en="Floors">Grindys</button>
+        <button class="filter-btn" onclick="filterPortfolio('baldai', this)" data-lt="Baldai" data-en="Furniture">Baldai</button>
+        <button class="filter-btn" onclick="filterPortfolio('sienos', this)" data-lt="Sienos" data-en="Walls">Sienos</button>
+        <button class="filter-btn" onclick="filterPortfolio('kita', this)" data-lt="Kita" data-en="Other">Kita</button>
       </div>
-      <div>
-        
-        <div class="filter-bar" id="portfolioFilters">
-          <button class="filter-btn active" onclick="filterPortfolio('visi', this)" data-lt="Visi" data-en="All">Visi</button>
-          <button class="filter-btn" onclick="filterPortfolio('durys', this)" data-lt="Durys" data-en="Doors">Durys</button>
-          <button class="filter-btn" onclick="filterPortfolio('baldai', this)" data-lt="Baldai" data-en="Furniture">Baldai</button>
-          <button class="filter-btn" onclick="filterPortfolio('sienos', this)" data-lt="Sienos" data-en="Walls">Sienos</button>
-          <button class="filter-btn" onclick="filterPortfolio('kita', this)" data-lt="Kita" data-en="Other">Kita</button>
-        </div>
+    </div>
+  </div>
+
+  <div class="portfolio-grid reveal" style="transition-delay: 0.2s">
+    <div class="pitem featured" data-cat="durys">
+      <img src="images/projects/lauko-arkines-durys-01.jpg" alt="Medinės lauko durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Durys · Lauko darbai" data-en="Doors · Exterior work">Durys · Lauko darbai</div>
+        <div class="pitem-title" data-lt="Medinės lauko durys" data-en="Wooden exterior doors">Medinės lauko durys</div>
       </div>
     </div>
 
-    <div class="portfolio-grid reveal" style="transition-delay: 0.2s">
-      <div class="pitem featured" data-cat="durys">
-        <img src="images/projects/lauko-arkines-durys-01.jpg" alt="Arkinės lauko durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Projektas" data-en="Doors · Projektas">Durys · Projektas</div>
-          <div class="pitem-title" data-lt="Arkinės lauko durys" data-en="Arched exterior doors">Arkinės lauko durys</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/fasado-langines-ir-durys-01.jpg" alt="Fasado langinės ir arkinės durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Projektas" data-en="Doors · Projektas">Durys · Projektas</div>
-          <div class="pitem-title" data-lt="Fasado langinės ir arkinės durys" data-en="Facade shutters and arched doors">Fasado langinės ir arkinės durys</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/klasikines-vidaus-durys-01.jpg" alt="Klasikinės vidaus durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interjeras">Durys · Interjeras</div>
-          <div class="pitem-title" data-lt="Klasikinės vidaus durys" data-en="Classic interior doors">Klasikinės vidaus durys</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/vidaus-durys-laiptine-01.jpg" alt="Vidaus durys prie laiptinės">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interjeras">Durys · Interjeras</div>
-          <div class="pitem-title" data-lt="Vidaus durys prie laiptinės" data-en="Interior doors by the staircase">Vidaus durys prie laiptinės</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="baldai">
-        <img src="images/projects/medinis-valgomojo-stalas-01.jpg" alt="Medinis valgomojo stalas">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Baldai · Interjeras" data-en="Furniture · Interjeras">Baldai · Interjeras</div>
-          <div class="pitem-title" data-lt="Medinis valgomojo stalas" data-en="Wooden dining table">Medinis valgomojo stalas</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="sienos">
-        <img src="images/projects/medines-sienu-lameles-01.jpg" alt="Medinės sienų lamelės">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Sienos · Interjeras" data-en="Walls · Interjeras">Sienos · Interjeras</div>
-          <div class="pitem-title" data-lt="Medinės sienų lamelės" data-en="Wooden wall slats">Medinės sienų lamelės</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/aukstos-juodos-durys-01.jpg" alt="Aukštos juodos vidaus durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interjeras">Durys · Interjeras</div>
-          <div class="pitem-title" data-lt="Aukštos juodos vidaus durys" data-en="Tall black interior doors">Aukštos juodos vidaus durys</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/arkines-lauko-durys-02.jpg" alt="Arkinės lauko durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Projektas" data-en="Doors · Projektas">Durys · Projektas</div>
-          <div class="pitem-title" data-lt="Arkinės lauko durys" data-en="Arched exterior doors">Arkinės lauko durys</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/baltos-vidaus-durys-01.jpg" alt="Baltos vidaus durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interjeras">Durys · Interjeras</div>
-          <div class="pitem-title" data-lt="Baltos vidaus durys" data-en="White interior doors">Baltos vidaus durys</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/klasikines-baltos-durys-02.jpg" alt="Klasikinės baltos durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interjeras">Durys · Interjeras</div>
-          <div class="pitem-title" data-lt="Klasikinės baltos durys" data-en="Classic white doors">Klasikinės baltos durys</div>
-        </div>
-      </div>
-
-      <div class="pitem" data-cat="durys">
-        <img src="images/projects/fasado-arkines-durys-03.jpg" alt="Fasado arkinės durys">
-        <div class="pitem-overlay">
-          <div class="pitem-cat" data-lt="Durys · Projektas" data-en="Doors · Projektas">Durys · Projektas</div>
-          <div class="pitem-title" data-lt="Fasado arkinės durys" data-en="Facade arched doors">Fasado arkinės durys</div>
-        </div>
+    <div class="pitem" data-cat="durys">
+      <img src="images/projects/fasado-langines-ir-durys-01.jpg" alt="Fasado langinės ir durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Durys · Fasadas" data-en="Doors · Facade">Durys · Fasadas</div>
+        <div class="pitem-title" data-lt="Fasado langinės ir durys" data-en="Facade shutters and doors">Fasado langinės ir durys</div>
       </div>
     </div>
-  </section>
 
-  <!-- PRICING -->
+    <div class="pitem" data-cat="grindys">
+      <img src="images/projects/klasikines-vidaus-durys-01.jpg" alt="Medinės grindys ir vidaus durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Grindys · Interjeras" data-en="Floors · Interior">Grindys · Interjeras</div>
+        <div class="pitem-title" data-lt="Medinės grindys ir vidaus durys" data-en="Wooden floors and interior doors">Medinės grindys ir vidaus durys</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="kita">
+      <img src="images/projects/vidaus-durys-laiptine-01.jpg" alt="Interjero medžio darbai prie laiptinės">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Interjeras · Projektas" data-en="Interior · Project">Interjeras · Projektas</div>
+        <div class="pitem-title" data-lt="Interjero medžio darbai prie laiptinės" data-en="Interior woodwork by the staircase">Interjero medžio darbai prie laiptinės</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="baldai">
+      <img src="images/projects/medinis-valgomojo-stalas-01.jpg" alt="Medinis valgomojo stalas">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Baldai · Interjeras" data-en="Furniture · Interior">Baldai · Interjeras</div>
+        <div class="pitem-title" data-lt="Medinis valgomojo stalas" data-en="Wooden dining table">Medinis valgomojo stalas</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="sienos">
+      <img src="images/projects/medines-sienu-lameles-01.jpg" alt="Medinės sienų lamelės">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Sienos · Interjeras" data-en="Walls · Interior">Sienos · Interjeras</div>
+        <div class="pitem-title" data-lt="Medinės sienų lamelės" data-en="Wooden wall slats">Medinės sienų lamelės</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="durys">
+      <img src="images/projects/aukstos-juodos-durys-01.jpg" alt="Aukštos juodos vidaus durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interior">Durys · Interjeras</div>
+        <div class="pitem-title" data-lt="Aukštos juodos vidaus durys" data-en="Tall black interior doors">Aukštos juodos vidaus durys</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="durys">
+      <img src="images/projects/arkines-lauko-durys-02.jpg" alt="Medinės arkinės lauko durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Durys · Lauko darbai" data-en="Doors · Exterior work">Durys · Lauko darbai</div>
+        <div class="pitem-title" data-lt="Medinės arkinės lauko durys" data-en="Wooden arched exterior doors">Medinės arkinės lauko durys</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="durys">
+      <img src="images/projects/baltos-vidaus-durys-01.jpg" alt="Baltos vidaus durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interior">Durys · Interjeras</div>
+        <div class="pitem-title" data-lt="Baltos vidaus durys" data-en="White interior doors">Baltos vidaus durys</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="durys">
+      <img src="images/projects/klasikines-baltos-durys-02.jpg" alt="Klasikinės baltos vidaus durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Durys · Interjeras" data-en="Doors · Interior">Durys · Interjeras</div>
+        <div class="pitem-title" data-lt="Klasikinės baltos vidaus durys" data-en="Classic white interior doors">Klasikinės baltos vidaus durys</div>
+      </div>
+    </div>
+
+    <div class="pitem" data-cat="durys">
+      <img src="images/projects/fasado-arkines-durys-03.jpg" alt="Fasado arkinės durys">
+      <div class="pitem-overlay">
+        <div class="pitem-cat" data-lt="Durys · Fasadas" data-en="Doors · Facade">Durys · Fasadas</div>
+        <div class="pitem-title" data-lt="Fasado arkinės durys" data-en="Facade arched doors">Fasado arkinės durys</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
   <section id="kainorastis">
     <div class="section-wrap">
       <div class="reveal">
