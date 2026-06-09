@@ -368,6 +368,35 @@
       opacity: 1;
     }
 
+
+    /* SERVICES */
+    .services-list {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 900px;
+    }
+
+    .service-pill {
+      background: white;
+      border: 1px solid #e8e2d8;
+      padding: 18px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--forest);
+      letter-spacing: 0.3px;
+    }
+
+    .service-pill span {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
     /* ABOUT */
     #apie { background: var(--parchment); }
 
@@ -949,6 +978,7 @@
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
+      .services-list,
       .products-grid,
       .about-grid,
       .pricing-layout,
@@ -1064,6 +1094,29 @@
         <p class="label" data-lt="Gaminiai ir paslaugos" data-en="Products and services">Gaminiai ir paslaugos</p>
         <h2 class="display-title">Mes kuriame iš medžio —<br>tai, kas gyvuoja ilgai</h2>
         <p class="body-text" data-lt="Kiekvienas gaminys — nuo vidaus durų iki individualių baldų — gaminamas iš kokybiškos medienos, įskaitant klijuotos medienos masyvą, ir kruopščiai apdirbamas rankomis." data-en="Every product — from interior doors to custom furniture — is made from high-quality wood, including glued solid wood, and carefully finished by hand.">Kiekvienas gaminys — nuo vidaus durų iki individualių baldų — gaminamas iš kokybiškos medienos, įskaitant klijuotos medienos masyvą, ir kruopščiai apdirbamas rankomis.</p>
+        <div class="services-list">
+          <div class="service-pill">
+            <span data-lt="Paslauga" data-en="Service">Paslauga</span>
+            <strong data-lt="Dažymas" data-en="Painting">Dažymas</strong>
+          </div>
+          <div class="service-pill">
+            <span data-lt="Paslauga" data-en="Service">Paslauga</span>
+            <strong data-lt="Beicavimas ir lakavimas" data-en="Staining and varnishing">Beicavimas ir lakavimas</strong>
+          </div>
+          <div class="service-pill">
+            <span data-lt="Paslauga" data-en="Service">Paslauga</span>
+            <strong data-lt="Nestandartiniai medienos gaminiai" data-en="Custom wood products">Nestandartiniai medienos gaminiai</strong>
+          </div>
+          <div class="service-pill">
+            <span data-lt="Paslauga" data-en="Service">Paslauga</span>
+            <strong data-lt="Faneravimas įvairiomis medienos rūšimis" data-en="Veneering with various wood species">Faneravimas įvairiomis medienos rūšimis</strong>
+          </div>
+          <div class="service-pill">
+            <span data-lt="Paslauga" data-en="Service">Paslauga</span>
+            <strong data-lt="HPL klijavimas" data-en="HPL bonding">HPL klijavimas</strong>
+          </div>
+        </div>
+
       </div>
 
       <div class="products-grid reveal" style="transition-delay: 0.2s">
